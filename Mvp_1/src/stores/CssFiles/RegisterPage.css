@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(245, 244, 255);
+    overflow-x: hidden;
+}
+
+/* Only apply no-scroll when register page is active */
+body.register-page-active {
+    overflow: hidden;
+}
+
+.register_loading_container{
+  margin-top: 100px;
+}
+/* Main heading */
+.register_loading_heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+  margin: 3rem 0 1.5rem 0;
+  letter-spacing: -0.5px;
+  animation: fadeInSlide 0.8s ease-out;
+}
+
+/* Subtle typing dots animation */
+.register_loading_heading::after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #3498db;
+  border-radius: 50%;
+  margin-left: 8px;
+  animation: typingDot 1.5s infinite;
+}
+
+@keyframes typingDot {
+  0%, 60% { opacity: 0; }
+  30% { opacity: 1; }
+}
+
+/* Side text */
+.register_loading_side {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin: 1rem 0 0.5rem 0;
+  font-weight: 400;
+  animation: fadeInSlide 0.8s ease-out 0.3s both;
+}
+
+
+
+/* Fade in slide animation */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Horizontal oscillating loader */
+.register_loading-spinner {
+  width: 60px;
+  height: 4px;
+  background-color: #3498db;
+  border-radius: 2px;
+  margin: 2rem auto;
+  position: relative;
+  animation: horizontalSlide 2s ease-in-out infinite;
+}
+
+.register_loading-spinner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  background-color: #2980b9;
+  border-radius: 2px;
+  animation: slideHighlight 2s ease-in-out infinite;
+}
+
+@keyframes horizontalSlide {
+  0%, 100% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+}
+
+@keyframes slideHighlight {
+  0% { left: 0; }
+  50% { left: calc(100% - 20px); }
+  100% { left: 0; }
+}
+
+/* Horizontal oscillating dots */
+.register_loading-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 12px;
+}
+
+.register_loading-dots span {
+  width: 8px;
+  height: 8px;
+  background-color: #bdc3c7;
+  border-radius: 50%;
+  animation: horizontalBounce 1.8s ease-in-out infinite;
+}
+
+.register_loading-dots span:nth-child(1) { animation-delay: 0s; }
+.register_loading-dots span:nth-child(2) { animation-delay: 0.3s; }
+.register_loading-dots span:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes horizontalBounce {
+  0%, 80%, 100% {
+    transform: translateX(0);
+    background-color: #bdc3c7;
+  }
+  40% {
+    transform: translateX(8px);
+    background-color: #3498db;
+  }
+}
+
+/* Horizontal progress bar */
+.register_loading-progress {
+  width: 280px;
+  height: 3px;
+  background-color: #ecf0f1;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.register_loading-progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #3498db, transparent);
+  animation: progressSlide 2.5s infinite ease-in-out;
+}
+
+@keyframes progressSlide {
+  0% { left: -30%; }
+  100% { left: 100%; }
+}
+
+/* Simple text oscillation */
+.text-oscillate {
+  animation: textSway 3s ease-in-out infinite;
+}
+
+@keyframes textSway {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
+/* Breathing effect for heading */
+.breathing-text {
+  animation: breathe 3s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .register_loading_heading {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 0;
+  }
+  
+  .register_loading_side {
+    font-size: 1rem;
+  }
+  
+  .register_loading_sub {
+    font-size: 0.9rem;
+  }
+  
+  .register_loading-progress {
+    width: 240px;
+  }
+  
+  .register_loading-spinner {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register_loading_heading {
+    font-size: 1.6rem;
+  }
+  
+  .register_loading-progress {
+    width: 200px;
+  }
+  
+  .register_loading-spinner {
+    width: 40px;
+  }
+}
+
+
+/* Only apply full window styles when .entire-register class is present */
+.entire-register {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.main-register {
+    background-color: aliceblue;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(60, 60, 60, 0.5);
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    /* ADD THESE ANIMATION PROPERTIES */
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(0);
+}
+
+/* ADD THESE ANIMATION CLASSES */
+.main-register.slide-from-login {
+    transform: translateX(50vw);
+    animation: slideFromLogin 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.main-register.slide-to-login {
+    transform: translateX(50vw);
+}
+
+@keyframes slideFromLogin {
+    from {
+        transform: translateX(50vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.image-container-register {
+    background-color: rgba(162, 216, 249, 0.6);
+    display: inline-block;
+    flex: 1;
+    border-radius: 30px;
+    position: relative;
+    order: 1; /* Image comes first (left side) */
+}
+
+.image-register {
+    position: absolute;
+    left: -20px;
+    bottom: 60px;
+    max-width: 100%;
+}
+
+.RegisterPage {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1.5;
+    padding-right: 60px;
+    padding-left: 40px;
+    order: 2; /* Form comes second (right side) */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.welcome-register {
+    margin-top: 0px;
+    font-size: 17px;
+    letter-spacing: -0.2px;
+    opacity: 0.7;
+}
+
+.register-title {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 39px;
+    letter-spacing: -0.2px;
+}
+
+.form-group-register {
+    margin-bottom: 20px;
+}
+
+.form-row-register {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group-half-register {
+    flex: 1;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.toggle-icon {
+  position: absolute;
+  right: 31px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+
+.register-button {
+    background-color: rgba(255, 0, 0, 0.7);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    height: 40px;
+    width: 105px;
+    border-radius: 24.5px;
+    font-size: 15px;
+    margin-left: 105px;
+    transition: ease-in-out 0.4s;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.register-button:hover {
+    opacity: 0.7;
+}
+
+.register-button:active {
+    color: rgba(255, 0, 0, 0.7);
+    background-color: white;
+}
+
+.label-register {
+    display: block;
+    padding-bottom: 6px;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.input-container-register {
+    height: 35px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(162, 216, 249, 0.6);
+    box-sizing: border-box;
+}
+
+.input-container-register:hover {
+    outline: none;
+}
+
+.input-container-register:focus {
+    outline: none;
+    background-color: rgba(162, 216, 249, 0.8);
+}
+
+.error-register {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.login-link-register {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 6px;
+    font-size: 14px;
+}
+
+.login-link-register span a {
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.login-link-register span a:hover {
+    text-decoration: underline;
+}
+/* SOLUTION 1: Create a flex container for button and login link */
+
+/* Add this new CSS class to wrap both button and login link */
+.button-and-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Modify your existing register-button class */
+.register-button {
+    background-color: rgba(255, 0, 0, 0.7);
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 105px;
+    border-radius: 24.5px;
+    font-size: 15px;
+    margin: 0; /* Remove all margins since we'll use flex */
+    transition: ease-in-out 0.4s;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* Modify your existing login-link-register class */
+.login-link-register {
+    margin: 0; /* Remove all margins */
+    padding: 0;
+    font-size: 14px;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Alternative Solution 2: Using absolute positioning */
+.register-button-container {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.register-button-alt {
+    background-color: rgba(255, 0, 0, 0.7);
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 105px;
+    border-radius: 24.5px;
+    font-size: 15px;
+    margin-left: 105px;
+    transition: ease-in-out 0.4s;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.login-link-register-alt {
+    position: absolute;
+    color: rgb(237, 118, 22);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .RegisterPage {
+        padding-right: 40px;
+        padding-left: 30px;
+    }
+    
+    .register-title {
+        font-size: 32px;
+    }
+    
+    .input-container-register {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-register {
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    
+    .image-container-register {
+        flex: 0.4;
+        order: 1;
+    }
+    
+    .RegisterPage {
+        flex: 1;
+        order: 2;
+        padding: 20px 30px;
+        justify-content: flex-start;
+        padding-top: 30px;
+    }
+    
+    .register-title {
+        font-size: 28px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .form-group-register {
+        margin-bottom: 20px;
+    }
+    
+    .input-container-register {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .register-button {
+        margin-left: 0;
+        width: 120px;
+    }
+    
+    .image-register {
+        right: 0;
+        bottom: 20px;
+        max-width: 80%;
+        max-height: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .RegisterPage {
+        padding: 15px 20px;
+    }
+    
+    .register-title {
+        font-size: 24px;
+    }
+    
+    .welcome-register {
+        font-size: 15px;
+    }
+    
+    .form-group-register {
+        margin-bottom: 18px;
+    }
+    
+    .input-container-register {
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .label-register {
+        font-size: 13px;
+    }
+    
+    .register-button {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .image-register {
+        max-width: 70%;
+        max-height: 70%;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .main-register {
+        flex-direction: row;
+    }
+    
+    .image-container-register {
+        flex: 0.6;
+    }
+    
+    .RegisterPage {
+        flex: 1;
+        padding: 15px 25px;
+        overflow-y: auto;
+    }
+    
+    .register-title {
+        font-size: 24px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    .form-group-register {
+        margin-bottom: 15px;
+    }
+}

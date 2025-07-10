@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Welcome Section */
+.Home_welcome-section {
+  text-align: left;
+  display: flex;
+  padding-top: 60px;
+  padding-left: 20px;
+  justify-content: flex-start;
+}
+.Home_welcome-section .user_welcome {
+  font-size: 2.5rem;
+}
+
+.Home_welcome-content {
+  z-index: 1;
+}
+
+.Home_welcome-content h1 {
+  font-weight: 500;
+  text-shadow: none;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.Home_welcome-content p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.4;          
+  letter-spacing: 0.01em;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stats Overview */
+.Home_main-content-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+  align-items: start;
+}
+
+.Home_JobRoles-carousel-wrapper{
+  padding-top: 10px;
+}
+.Home_stats-overview-wrapper {
+  display: flex; 
+  flex-direction: column;
+  gap: 15px; 
+  transform: none; 
+  margin-top: 0; 
+  padding: 0;
+}
+
+.Home_stats-overview {
+  transform: translateY(-30px);
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  margin: 40px auto 0 auto;
+  max-width: 1200px; /* Ensure this overview container is centered */
+}
+
+.Home_stats-container {
+  /* max-width: 1200px; /* Moved to .Home_stats-overview for overall centering */
+  display: grid;
+  /* Adjust minmax to make cards smaller while still allowing responsiveness */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Made min width smaller */
+  gap: 15px; /* Slightly reduced gap between cards */
+  align-items: center;
+  justify-content: center; /* Center cards if they don't fill the row */
+  padding-right: 15px; /* Add some horizontal padding to the grid container */
+}
+
+.Home_stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 10px; /* Reduced padding to make cards smaller */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Reduced gap between icon and info */
+  transition: all 0.3s ease;
+  animation: slideInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.Home_stat-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.Home_stat-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.Home_stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Home_stat-icon {
+  width: 40px; /* Smaller icon container */
+  height: 40px; /* Smaller icon container */
+  border-radius: 10px; /* Adjusted border-radius */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.Home_stat-icon svg {
+    width: 20px; /* Smaller SVG icon size */
+    height: 20px; /* Smaller SVG icon size */
+}
+
+.Home_open-roles .Home_stat-icon {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.Home_candidates .Home_stat-icon {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.Home_stat-info {
+  flex: 1;
+  /* Removed flex-direction: column; to allow Home_stat-number-label-group to manage layout */
+}
+
+/* NEW: Wrapper for number and label to make them side-by-side */
+.Home_stat-number-label-group {
+    display: flex; /* Make it a flex container */
+    align-items: baseline; /* Align items by their text baseline */
+    gap: 6px; /* Small space between number and label */
+    margin-bottom: 2px; /* Small margin below the group */
+}
+
+.Home_stat-number {
+  font-size: 1.6rem; /* Reduced font size for number */
+  font-weight: 500;
+  color: #1f2937;
+  line-height: 1; /* Keep line height tight */
+  /* margin-bottom: 4px; /* REMOVED: Gap on parent handles spacing */
+}
+
+.Home_stat-label {
+  font-size: 1.6rem; /* Reduced font size for label */
+  font-weight: 500;
+  color: #1f2937;
+  line-height: 1; /* Keep line height tight */
+  /* margin-bottom: 2px; /* REMOVED: Gap on parent handles spacing */
+}
+
+.Home_stat-sublabel {
+  font-size: 0.75rem; /* Reduced font size for sublabel */
+  color: #6b7280;
+  margin-top: 2px; /* Small margin above sublabel */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .Home_welcome-content {
+    padding: 0 15px; /* Adjust padding for smaller screens */
+  }
+  .user_welcome {
+    font-size: 2rem; /* Smaller on smaller screens */
+  }
+  .Home_welcome-content p {
+    font-size: 1rem; /* Smaller on smaller screens */
+  }
+  .Home_stats-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Even smaller card min width */
+    gap: 10px; /* Reduced gap for smaller screens */
+  }
+  .Home_stat-card {
+    padding: 8px; /* Further reduce card padding */
+    gap: 8px; /* Further reduce icon-info gap */
+  }
+  .Home_stat-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .Home_stat-icon svg {
+      width: 18px;
+      height: 18px;
+  }
+  .Home_stat-number {
+    font-size: 1.4rem;
+  }
+  .Home_stat-label {
+    font-size: 0.9rem;
+  }
+  .Home_stat-sublabel {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Home_welcome-section {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .Home_welcome-content {
+    padding: 0 10px;
+  }
+  .user_welcome {
+    font-size: 1.8rem;
+  }
+  .Home_welcome-content p {
+    font-size: 0.9rem;
+  }
+  .Home_stats-overview {
+    margin-top: 30px;
+  }
+  .Home_stats-container {
+    grid-template-columns: 1fr; /* Stack cards vertically on very small screens */
+    gap: 10px;
+  }
+}

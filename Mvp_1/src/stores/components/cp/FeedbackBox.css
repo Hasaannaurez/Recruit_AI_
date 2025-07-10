@@ -1,0 +1,433 @@
+/* Unified Comments Box Styles */
+.cp_co_unified-comments-box {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin: 12px 0 12px 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cp_co_unified-comments-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Header Section */
+.cp_co_comments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px; /* Reduced header padding to match image */
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-bottom: 2px solid #e2e8f0;
+  box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.cp_co_header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Adjusted spacing */
+}
+
+.cp_co_section-title {
+  font-size: 20px; /* Adjusted title size */
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Spacing for icon */
+}
+
+.cp_co_title-icon {
+  font-size: 20px;
+  color: #64748b;
+}
+
+.cp_co_selection-badge {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(59, 130, 246, 0.3);
+  animation: cp_co_pulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes cp_co_pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+}
+
+.cp_co_header-actions {
+  display: flex;
+  gap: 10px; /* Spacing between buttons */
+  align-items: center;
+}
+
+.cp_co_delete-selected-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  border: none;
+  padding: 10px 16px; /* Adjusted padding */
+  border-radius: 10px; /* Slightly smaller radius */
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(239, 68, 68, 0.3);
+}
+
+.cp_co_delete-selected-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(239, 68, 68, 0.4);
+}
+
+/* Add Comments Section - simplified to match image_d5b9e2.png */
+.cp_co_add-comments-section {
+  background: #ffffff; /* White background for this section */
+  padding: 0 20px 12px 30px; /* Adjusted padding to match image */
+  border-bottom: 1px solid #e2e8f0; /* Separator for existing comments section */
+}
+
+.cp_co_form-container {
+  padding: 0; /* Remove padding from container within this section */
+}
+
+.cp_co_form-group {
+  margin-bottom: 12px; /* Spacing between input fields */
+}
+
+.cp_co_form-group:last-of-type { /* Target the last form-group for specific margin */
+  margin-bottom: 0;
+}
+
+.cp_co_form-input,
+.cp_co_form-textarea {
+  width: 100%;
+  padding: 12px 15px; /* Adjusted padding to look like image */
+  border: 1px solid #cbd5e0; /* Lighter border color */
+  border-radius: 8px; /* Smaller radius */
+  font-size: 15px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  background: #fdfdfe; /* Very light background */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04); /* Subtle inset shadow */
+}
+
+.cp_co_form-input::placeholder,
+.cp_co_form-textarea::placeholder {
+  color: #a0aec0; /* Lighter placeholder color */
+}
+
+.cp_co_form-input:focus,
+.cp_co_form-textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.04);
+  transform: none; /* No transform on focus to keep it neat */
+}
+
+.cp_co_form-textarea {
+  resize: vertical;
+  min-height: 80px; /* Adjusted min-height to look like image */
+  line-height: 1.5;
+}
+
+.cp_co_submit-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #4a5568; /* Darker gray background for "Post Comment" */
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px; /* Space between textarea and button */
+}
+
+.cp_co_submit-btn:hover:not(.cp_co_disabled) {
+  background: #2d3748; /* Darker on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+.cp_co_submit-btn.cp_co_disabled {
+  background: #e2e8f0; /* Lighter disabled background */
+  color: #a0aec0; /* Lighter disabled text */
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.cp_co_error-message {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border: 1px solid #fecaca;
+  text-align: left; /* Align error text left */
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: cp_co_shake 0.5s ease;
+}
+
+@keyframes cp_co_shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.cp_co_error-icon {
+  font-size: 16px;
+}
+
+/* Comments Display Section - for existing comments */
+.cp_co_comments-display-section {
+  padding: 12px 20px 16px 30px; /* Consistent padding */
+  min-height: 50px; /* Ensure some height for empty state */
+  /* No more border-top, as add-comments-section now has border-bottom */
+}
+
+.cp_co_comments-grid {
+  display: flex; /* Changed back to flex for a stacked list-like appearance if preferred, or use grid with single column */
+  flex-direction: column; /* Stack them vertically */
+  gap: 12px; /* Spacing between comment cards */
+}
+
+.cp_co_comment-card {
+  background: #ffffff; /* White background for actual comments */
+  border: 1px solid #e2e8f0; /* Lighter border for existing comments */
+  border-radius: 12px; /* Smaller radius for existing comments */
+  padding: 18px 25px; /* Adjusted padding */
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); /* Subtle shadow */
+}
+
+.cp_co_comment-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; /* Make it a left border */
+  width: 4px; /* Thinner left border */
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6); /* Vertical gradient */
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+
+.cp_co_comment-card:hover {
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cp_co_comment-card:hover::before {
+  transform: scaleY(1);
+}
+
+.cp_co_comment-card.cp_co_selected {
+  border-color: #3b82f6;
+  background: #e0f2fe; /* Lighter blue for selected */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1), 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cp_co_comment-card.cp_co_selected::before {
+  transform: scaleY(1);
+}
+
+.cp_co_comment-content {
+  position: relative;
+  z-index: 1;
+  padding-right: 35px; /* Space for selection indicator */
+}
+
+.cp_co_comment-subject {
+  font-size: 16px; /* Adjusted subject font size */
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 8px 0; /* Adjusted margin */
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.cp_co_comment-text {
+  color: #64748b;
+  font-size: 14px; /* Adjusted text font size */
+  line-height: 1.6;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.cp_co_selection-indicator {
+  position: absolute;
+  top: 15px; /* Adjusted position */
+  right: 15px; /* Adjusted position */
+  background: #3b82f6;
+  color: white;
+  width: 28px; /* Smaller indicator */
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+  animation: cp_co_bounceIn 0.3s ease;
+  border: 1.5px solid white; /* Thinner white border */
+}
+
+@keyframes cp_co_bounceIn {
+  0% { transform: scale(0); opacity: 0; }
+  70% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.cp_co_checkmark {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* No Comments Yet - matching image_d5b9e2.png */
+.cp_co_no-comments {
+  text-align: center;
+  padding: 20px; /* Reduced padding */
+  color: #a0aec0; /* Lighter color */
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px; /* Space from the input form */
+  /* Remove dashed border and background from previous version for this look */
+  /* background: #fdfdfe; */
+  /* border: 1px dashed #e2e8f0; */
+}
+
+/* Hide the icon and subtext if they are not in the image */
+.cp_co_no-comments-icon,
+.cp_co_no-comments-subtext {
+  display: none;
+}
+
+.cp_co_no-comments-text {
+  font-size: 14px; /* Matches the image's font size */
+  font-weight: 500;
+  color: #a0aec0; /* Matches the image's font color */
+  margin: 0;
+}
+
+
+.cp_co_btn-icon {
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cp_co_comments-header {
+    padding: 18px 25px;
+  }
+  
+  .cp_co_add-comments-section,
+  .cp_co_comments-display-section {
+    padding: 18px 25px;
+  }
+
+  .cp_co_comments-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .cp_co_comments-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    padding: 15px 20px;
+  }
+  
+  .cp_co_header-left {
+    justify-content: center;
+  }
+  
+  .cp_co_header-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .cp_co_delete-selected-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cp_co_add-comments-section,
+  .cp_co_comments-display-section {
+    padding: 15px 20px;
+  }
+  
+  .cp_co_comment-content {
+    padding-right: 20px;
+  }
+  
+  .cp_co_unified-comments-box {
+    border-radius: 12px;
+    margin: 0 8px 20px 8px;
+  }
+
+  .cp_co_comment-card {
+    padding: 15px 20px;
+  }
+  .cp_co_section-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cp_co_comments-header {
+    padding: 12px 15px;
+  }
+  
+  .cp_co_section-title {
+    font-size: 16px;
+  }
+  
+  .cp_co_add-comments-section,
+  .cp_co_comments-display-section {
+    padding: 12px 15px;
+  }
+  
+  .cp_co_comment-card {
+    padding: 12px 15px;
+  }
+  
+  .cp_co_form-input,
+  .cp_co_form-textarea {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  .cp_co_submit-btn,
+  .cp_co_delete-selected-btn {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+  .cp_co_no-comments-text {
+    font-size: 13px;
+  }
+}

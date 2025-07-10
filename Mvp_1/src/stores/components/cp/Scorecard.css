@@ -1,0 +1,150 @@
+/* components/cp/Scorecard.css */
+.cp_scorecard-wrapper {
+  max-width: 100%; /* Important for column layout */
+  margin: 12px 0 0 0;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  color: #2d3748;
+}
+
+.cp_scorecard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cp_scorecard-title {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1a202c;
+  margin: 0; /* Remove default h3 margin */
+}
+
+.cp_view-details-button {
+  background-color: #f7fafc; /* Light gray background */
+  color: #2b6cb0; /* Blue text */
+  border: 1px solid #e2e8f0;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.cp_view-details-button:hover {
+  background-color: #ebf4ff; /* Lighter blue on hover */
+  border-color: #bee3f8;
+}
+
+.cp_overall-score-section {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.cp_overall-score-value {
+  font-size: 48px; /* Large size for overall score */
+  font-weight: 700;
+  color: #2b6cb0; /* Blue color for the main score */
+  line-height: 1; /* Remove extra line height */
+  margin-bottom: 5px;
+}
+
+.cp_overall-score-label {
+  font-size: 15px;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+.cp_score-category {
+  margin-bottom: 15px; /* Space between each category bar */
+}
+
+.cp_score-category-label {
+  font-size: 14px;
+  color: #4a5568;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.cp_score-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Space between bar and score value */
+}
+
+.cp_score-bar-background {
+  position: relative;
+  flex: 1; /* Take remaining space */
+  height: 8px;
+  background-color: #e2e8f0; /* Light gray background */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cp_score-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease-out; /* Smooth animation for bar width */
+}
+
+/* Colored fills - 7-tier scoring system optimized for 40-80 range */
+.cp_score-bar-excellent {
+  background-color: #22c55e; /* Bright Green - 85-100 */
+}
+
+.cp_score-bar-good {
+  background-color: #65a30d; /* Green - 75-84 */
+}
+
+.cp_score-bar-above-avg {
+  background-color: #84cc16; /* Light Green - 65-74 */
+}
+
+.cp_score-bar-average {
+  background-color: #eab308; /* Yellow - 55-64 */
+}
+
+.cp_score-bar-below-avg {
+  background-color: #f97316; /* Orange - 45-54 */
+}
+
+.cp_score-bar-poor {
+  background-color: #ea580c; /* Red-Orange - 35-44 */
+}
+
+.cp_score-bar-very-poor {
+  background-color: #dc2626; /* Red - 0-34 */
+}
+
+.cp_score-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a202c;
+  min-width: 40px; /* Ensure space for score value */
+  text-align: right;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.cp_no-scorecard {
+    max-width: 100%;
+    height: 120px;
+    margin: 12px 0 0 0;
+    padding: 50px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+    color: #2d3748;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 16px;
+}

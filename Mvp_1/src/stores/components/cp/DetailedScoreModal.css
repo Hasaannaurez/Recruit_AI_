@@ -1,0 +1,154 @@
+/* DetailedScoreModal.css */
+
+.cp_modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.cp_modal-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  max-width: 800px;
+  width: 100%;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cp_modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px 0 12px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 0;
+}
+
+.cp_modal-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.cp_modal-close-button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cp_modal-close-button:hover {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.cp_modal-content {
+  padding: 12px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.cp_detailed-scores-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.cp_score-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.cp_score-criterion {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.cp_score-display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cp_score-value {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .cp_modal-overlay {
+    padding: 10px;
+  }
+  
+  .cp_modal-container {
+    max-height: 90vh;
+  }
+  
+  .cp_detailed-scores-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .cp_modal-header {
+    padding: 16px 16px 0 16px;
+  }
+  
+  .cp_modal-content {
+    padding: 16px;
+  }
+  
+  .cp_modal-title {
+    font-size: 20px;
+  }
+}
+
+/* Custom scrollbar for webkit browsers */
+.cp_modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cp_modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.cp_modal-content::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.cp_modal-content::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

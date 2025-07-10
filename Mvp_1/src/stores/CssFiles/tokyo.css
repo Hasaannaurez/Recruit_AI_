@@ -1,0 +1,837 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 0;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background: linear-gradient(135deg, #667eea 0%, #5182dc 100%);
+  padding: 90px 20px; 
+  position: relative;
+  overflow: hidden;
+  min-height: 200px; 
+}
+
+.welcome-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+  opacity: 0.5;
+}
+
+.welcome-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-content h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stats Overview */
+.stats-overview {
+  padding: 0 20px;
+  transform: translateY(-30px);
+  position: relative;
+  z-index: 3;
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.3s ease;
+  animation: slideInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.stat-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.stat-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.open-roles .stat-icon {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.candidates .stat-icon {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.stat-info {
+  flex: 1;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 2px;
+}
+
+.stat-sublabel {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Job Roles Section */
+.job-roles-section {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  animation: fadeIn 0.6s ease-out 0.3s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Search Container */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: #6b7280;
+  z-index: 1;
+}
+
+.search-input {
+  padding: 10px 12px 10px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  width: 250px;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+}
+
+.add-role-btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.add-role-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 12px 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.tab-btn.active {
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #2563eb;
+}
+
+.tab-btn:hover:not(.active) {
+  color: #374151;
+  background: #f9fafb;
+}
+
+/* Job Roles Grid */
+.job-roles__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 200px;
+  margin-bottom: 24px;
+  overflow: visible;
+}
+
+/* Slick Carousel Slide Spacing */
+.slick-slide {
+  overflow: visible !important;
+  padding: 0 15px; /* Add horizontal spacing between cards */
+}
+
+/* Ensure first and last slides don't have unnecessary padding */
+.slick-slide:first-child {
+  padding-left: 0;
+}
+
+.slick-slide:last-child {
+  padding-right: 0;
+}
+
+/* Alternative method - Direct card spacing within carousel */
+.slick-slider .job-role-card {
+  margin: 0 10px; /* Add margin around each card */
+}
+
+/* Adjust carousel container to accommodate spacing */
+.slick-list {
+  padding: 0 10px; /* Compensate for card margins */
+  margin: 0 -10px; /* Pull back to maintain alignment */
+}
+
+.job-role-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between;
+  
+  /* Card spacing and shadow for better separation */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.job-role-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7px;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+}
+
+.job-role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12), 0 8px 16px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
+}
+
+.job-role-header {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the start (left) */
+  margin-bottom: 16px;
+}
+
+.job-role-header h3 {
+  font-size: 1.5 rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 10px 0;
+}
+
+.job-role-header p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #1f2937;
+  margin: 0;
+}
+
+/* Progress Section */
+.progress-section {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  border-radius: 3px;
+  transition: width 0.6s ease;
+  animation: progressAnimation 1s ease-in-out;
+}
+
+/* Enhanced Active/Inactive Button with Tooltip */
+.Carousel_ActiveBtn {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10; /* Ensure button stays above tooltip */
+}
+
+.Carousel_ActiveBtn:hover {
+  background-color: blue;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Tooltip Styles */
+.hover-tooltip {
+  position: absolute;
+  bottom: 3.5rem; /* Position above the button */
+  left: 1rem;
+  background: #1f2937;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  
+  /* Animation */
+  animation: tooltipFadeIn 0.2s ease-out;
+  transform-origin: bottom left;
+}
+
+/* Tooltip arrow pointing down to the button */
+.hover-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 20px; /* Align with button */
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #1f2937;
+}
+
+/* Tooltip fade-in animation */
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Alternative tooltip style - Modern glassmorphism */
+.hover-tooltip.glass-style {
+  background: rgba(255, 255, 255, 0.95);
+  color: #1f2937;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.hover-tooltip.glass-style::after {
+  border-top-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Alternative tooltip style - Colorful */
+.hover-tooltip.colorful-style {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+}
+
+.hover-tooltip.colorful-style::after {
+  border-top-color: #667eea;
+}
+
+
+
+
+
+@keyframes progressAnimation {
+  from {
+    width: 0%;
+  }
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.progress-text span:first-child {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.hired-tag {
+  background: #dcfce7;
+  color: #166534;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Job Stats */
+.job-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+  text-align: center;
+}
+
+.stat-icon-small {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  transition: all 0.2s ease;
+}
+
+.job-role-card:hover .stat-icon-small {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.stat-number {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1;
+}
+
+.stat-text {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* View All Container */
+.view-all-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.view-all-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.view-all-link:hover {
+  background: #eff6ff;
+  transform: translateX(4px);
+}
+
+/* Legacy styles for compatibility */
+/* Position the arrows */
+.slick-prev,
+.slick-next {
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons inside */
+.slick-prev:before,
+.slick-next:before {
+  color: black; /* change icon color */
+  font-size: 20px; /* change icon size */
+}
+
+/* Optional: adjust position */
+.slick-prev {
+  left: -45px; /* move left */
+}
+
+.slick-next {
+  right: -45px; /* move right */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .welcome-content h1 {
+    font-size: 2rem;
+  }
+  
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .job-roles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .main-content {
+    padding: 0 16px;
+  }
+  
+  .job-roles-section {
+    padding: 24px;
+  }
+
+  .slick-slide {
+  padding: 0 12px;
+}
+
+.slick-slider .job-role-card {
+  margin: 0 8px;
+}
+
+.slick-list {
+  padding: 0 8px;
+  margin: 0 -8px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .slick-slide {
+  padding: 0 8px;
+}
+
+.slick-slider .job-role-card {
+  margin: 0 5px;
+}
+
+.slick-list {
+  padding: 0 5px;
+  margin: 0 -5px;
+}
+
+  .welcome-section {
+    padding: 48px 16px; /* Increased from 32px to 48px for mobile */
+    min-height: 160px; /* Adjusted for mobile */
+  }
+  
+  .welcome-content h1 {
+    font-size: 1.75rem;
+  }
+  
+  .stats-overview {
+    padding: 0 16px;
+  }
+  
+  .stat-card {
+    padding: 20px;
+  }
+  
+  .stat-number {
+    font-size: 1.75rem;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  .job-roles-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .job-stats {
+    gap: 8px;
+  }
+  
+  .stat-item {
+    min-width: 0;
+  }
+  
+  .stat-text {
+    font-size: 0.6875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .job-role-card {
+    padding: 16px;
+  }
+  
+  .job-roles-section {
+    padding: 20px;
+  }
+  
+  .Carousel_total_candidates {
+    padding: 24px;
+  }
+  
+  .Carousel_total_candidates h1 {
+    font-size: 1.5rem;
+  }
+  
+  .Carousel_total_candidates h2 {
+    font-size: 1.125rem;
+  }
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Focus states for accessibility */
+.add-role-btn:focus,
+.tab-btn:focus,
+.view-all-link:focus,
+.more-options:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Loading animation for cards */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.loading-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Hover effects for interactive elements */
+.job-role-card:hover .progress-fill {
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+}
+
+.stat-card:hover .stat-icon {
+  transform: scale(1.05);
+}
+
+/* Print styles */
+@media print {
+  .add-role-btn,
+  .more-options,
+  .view-all-link {
+    display: none;
+  }
+  
+  .job-role-card {
+    break-inside: avoid;
+  }
+}

@@ -1,0 +1,242 @@
+{
+    "overall_score": [
+      {
+        "c": "n",
+        "p": 85,
+        "w": 95,
+        "par": "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field"
+      },
+      {
+        "c": "n",
+        "p": 70,
+        "w": 90,
+        "par": "5+ years of hands-on experience in backend development"
+      },
+      {
+        "c": "n",
+        "p": 70,
+        "w": 90,
+        "par": "Experience in architecting distributed systems, microservices, and API-driven applications"
+      },
+      {
+        "c": "n",
+        "p": 70,
+        "w": 90,
+        "par": "Proven ability to optimize database queries and enhance system efficiency"
+      },
+      {
+        "c": "n",
+        "p": 70,
+        "w": 90,
+        "par": "Production-level experience with high-traffic applications"
+      },
+      {
+        "c": "n",
+        "p": 70,
+        "w": 90,
+        "par": "Strong proficiency in JavaScript and Node.js"
+      },
+      {
+        "c": "e",
+        "p": 30,
+        "w": 75,
+        "par": "Experience with database technologies (MongoDB, PostgreSQL, Redis)"
+      },
+      {
+        "c": "e",
+        "p": 30,
+        "w": 75,
+        "par": "Expertise in designing RESTful APIs and GraphQL APIs"
+      },
+      {
+        "c": "e",
+        "p": 30,
+        "w": 75,
+        "par": "Hands-on experience with cloud platforms (AWS, GCP, or Azure) - prioritized AWS"
+      },
+      {
+        "c": "e",
+        "p": 20,
+        "w": 65,
+        "par": "Solid understanding of system design, scalability, and performance optimization"
+      },
+      {
+        "c": "e",
+        "p": 20,
+        "w": 60,
+        "par": "Strong problem-solving ability, teamwork, and communication skills"
+      },
+      {
+        "c": "e",
+        "p": 30,
+        "w": 70,
+        "par": "Successfully built and deployed at least one high-traffic, scalable backend system"
+      },
+      {
+        "c": "d",
+        "p": 0,
+        "w": 20,
+        "par": "Experience implementing CI/CD pipelines and automated testing strategies"
+      },
+      {
+        "c": "d",
+        "p": 0,
+        "w": 15,
+        "par": "Knowledge of Go, Python, or Rust in addition to JavaScript/TypeScript"
+      },
+      {
+        "c": "d",
+        "p": 0,
+        "w": 15,
+        "par": "Familiarity with event-driven architectures (Kafka, RabbitMQ, or Pub/Sub)"
+      },
+      {
+        "c": "d",
+        "p": 0,
+        "w": 15,
+        "par": "Prior experience working in fast-paced startups or product-based companies"
+      },
+      {
+        "c": "d",
+        "p": 0,
+        "w": 15,
+        "par": "Led a team of developers or mentored junior engineers"
+      },
+      {
+        "c": "d",
+        "p": 0,
+        "w": 10,
+        "par": "Performance recognition such as awards or patents"
+      },
+      {
+        "c": "d",
+        "p": 0,
+        "w": 10,
+        "par": "AWS Certified Solutions Architect or relevant cloud certification"
+      }
+    ],
+    "group_aspects": {
+      "Education": [
+        {
+          "w": 100,
+          "par": "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field"
+        },
+        {
+          "w": 15,
+          "par": "AWS Certified Solutions Architect or relevant cloud certification"
+        },
+        {
+          "w": 10,
+          "par": "Advanced Education: Master's degree in Computer Science, Data Engineering, or related fields"
+        }
+      ],
+      "Experience": [
+        {
+          "w": 30,
+          "par": "5+ years of hands-on experience in backend development"
+        },
+        {
+          "w": 20,
+          "par": "Experience in architecting distributed systems, microservices, and API-driven applications"
+        },
+        {
+          "w": 20,
+          "par": "Production-level experience with high-traffic applications"
+        },
+        {
+          "w": 20,
+          "par": "Proven ability to optimize database queries and enhance system efficiency"
+        },
+        {
+          "w": 20,
+          "par": "Successfully built and deployed at least one high-traffic, scalable backend system"
+        },
+        {
+          "w": 15,
+          "par": "Prior experience working in fast-paced startups or product-based companies"
+        },
+        {
+          "w": 15,
+          "par": "Led a team of developers or mentored junior engineers"
+        }
+      ],
+      "Soft Skills":[
+  {"w": 25,
+        "par": "Strong problem-solving ability"
+      },
+      {
+        "w": 25,
+        "par": "Teamwork skills for cross-functional collaboration"
+      },
+      {
+        "w": 25,
+        "par": "Communication skills"
+      },
+      {
+        "w": 15,
+        "par": "Performance recognition such as awards or patents"
+      }
+    ],
+    "Technical Skills": [
+      {
+        "w": 30,
+        "par": "Proficiency in JavaScript and Node.js"
+      },
+      {
+        "w": 20,
+        "par": "Experience with database technologies (MongoDB, PostgreSQL, Redis)"
+      },
+      {
+        "w": 20,
+        "par": "Expertise in designing RESTful APIs and GraphQL APIs"
+      },
+      {
+        "w": 20,
+        "par": "Hands-on experience with cloud platforms (AWS, GCP, or Azure) - prioritized AWS"
+      },
+      {
+        "w": 20,
+        "par": "Solid understanding of system design, scalability, and performance optimization"
+      },
+      {
+        "w": 10,
+        "par": "Knowledge of Go, Python, or Rust in addition to JavaScript/TypeScript"
+      },
+      {
+        "w": 10,
+        "par": "Familiarity with event-driven architectures (Kafka, RabbitMQ, or Pub/Sub)"
+      },
+      {
+        "w": 15,
+        "par": "Experience implementing CI/CD pipelines and automated testing strategies"
+      }
+    ]
+  },
+  "aspects_all_parameters":  [
+    { "par": "Strong proficiency in JavaScript and Node.js" },
+    { "par": "Hands-on experience with cloud platforms (AWS, GCP, or Azure) - prioritized AWS" },
+    { "par": "Solid understanding of system design, scalability, and performance optimization" },
+    { "par": "5+ years of hands-on experience in backend development" },
+    { "par": "Proven ability to optimize database queries and enhance system efficiency" },
+    { "par": "Strong problem-solving ability" },
+    { "par": "Production-level experience with high-traffic applications" },
+    { "par": "Familiarity with event-driven architectures (Kafka, RabbitMQ, or Pub/Sub)" },
+    { "par": "Experience in architecting distributed systems, microservices, and API-driven applications" },
+    {  "par": "Experience with database technologies (MongoDB, PostgreSQL, Redis)" },
+    {  "par": "Experience implementing CI/CD pipelines and automated testing strategies" },
+    {  "par": "Proficiency in JavaScript and Node.js" },
+    {  "par": "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field" },
+    {  "par": "Successfully built and deployed at least one high-traffic, scalable backend system" },
+    {  "par": "AWS Certified Solutions Architect or relevant cloud certification" },
+    {  "par": "Led a team of developers or mentored junior engineers" },
+    {  "par": "Prior experience working in fast-paced startups or product-based companies" },
+    {  "par": "Knowledge of Go, Python, or Rust in addition to JavaScript/TypeScript" },
+    {  "par": "Communication skills" },
+    {  "par": "Teamwork skills for cross-functional collaboration" },
+    {  "par": "Expertise in designing RESTful APIs and GraphQL APIs" },
+    {  "par": "Advanced Education: Master's degree in Computer Science, Data Engineering, or related fields" },
+    { "par": "Strong problem-solving ability, teamwork, and communication skills" },
+    {  "par": "Performance recognition such as awards or patents" }
+],
+  "aspect_pointer":0
+}

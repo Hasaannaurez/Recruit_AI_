@@ -1,0 +1,391 @@
+.cp_n_name-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 12px 0 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 100%;
+}
+
+/* Candidate Name Section (TOP HEADER) */
+.cp_n_candidate-name-section {
+  margin-bottom: 15px; /* Space below name, before job details */
+  padding-bottom: 12px; /* Visual separation for the header */
+  border-bottom: 1px solid #f0f4f8; /* Subtle separator */
+}
+
+.cp_n_candidate-name {
+  font-size: 24px; /* Larger font for the main header */
+  font-weight: 600;
+  color: #2d3748; /* Darker text */
+  margin: 0;
+  line-height: 1.2;
+  text-align: left;
+}
+
+/* New: Wrapper for Status, Job Role, and View Details */
+.cp_n_job-info-row {
+  display: flex;
+  align-items: center; /* Vertically align items in the row */
+  gap: 15px; /* Gap between status badge, job title block, and button */
+  margin-bottom: 15px; /* Space below this section */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.cp_n_status-badge {
+  padding: 6px 15px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap; /* Prevent text wrapping inside badge */
+}
+
+.cp_n_status-badge.cp_n_active {
+  background: #1a202c;
+  color: white;
+}
+
+.cp_n_status-badge.cp_n_inactive {
+  background: #cbd5e0;
+  color: #4a5568;
+}
+
+/* Job Title and External Link - Grouped */
+.cp_n_job-title-main {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Smaller gap between icon, title, and external link */
+  flex-grow: 1; /* Allows this section to take up available space */
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.cp_n_role-icon {
+  color: #5a67d8;
+  font-size: 20px;
+}
+
+.cp_n_role-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+}
+
+.cp_n_external-link {
+  color: #4299e1;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.cp_n_external-link:hover {
+  color: #3182ce;
+}
+
+/* View Details Button */
+.cp_n_view-details-btn {
+  background: none;
+  border: none;
+  color: #4299e1;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-weight: 500;
+  white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+.cp_n_view-details-btn:hover {
+  color: #3182ce;
+}
+
+/* Role Details (ID, Level, Type, Location) */
+.cp_n_role-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #718096;
+  margin-bottom: 20px; /* Space before contact info */
+  padding-bottom: 15px; /* Visual separation from contact info */
+  border-bottom: 1px solid #f0f4f8; /* Separator line */
+  flex-wrap: wrap;
+}
+
+.cp_n_role-details span:not(:last-child)::after {
+  content: "•";
+  margin-left: 10px;
+  color: #cbd5e0;
+}
+
+/* Contact Info (in a row) */
+.cp_n_contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cp_n_contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.cp_n_contact-icon {
+  margin-right: 8px;
+  color: #718096;
+  display: flex;
+  align-items: center;
+}
+
+.cp_n_contact-value {
+  color: #2d3748;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cp_n_name-card {
+    padding: 16px;
+  }
+
+  .cp_n_candidate-name {
+    font-size: 20px;
+  }
+
+  .cp_n_job-info-row {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start;
+    gap: 10px; /* Reduce gap when stacked */
+  }
+
+  .cp_n_job-title-main {
+    flex-direction: column; /* Stack icon, title, link */
+    align-items: flex-start;
+    width: 100%; /* Take full width */
+  }
+
+  .cp_n_role-title {
+    font-size: 16px;
+  }
+
+  .cp_n_view-details-btn {
+    align-self: flex-end; /* Align button to the right if stacked below job title */
+    margin-top: 5px;
+  }
+
+  .cp_n_role-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .cp_n_role-details span::after {
+    content: none !important;
+  }
+
+  .cp_n_contact-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Candidate Name Section (TOP HEADER) */
+.cp_n_candidate-name-section {
+  margin-bottom: 15px; /* Space below name, before job details */
+  padding-bottom: 12px; /* Visual separation for the header */
+  border-bottom: 1px solid #f0f4f8; /* Subtle separator */
+}
+
+.cp_n_candidate-name {
+  font-size: 24px; /* Larger font for the main header */
+  font-weight: 600;
+  color: #2d3748; /* Darker text */
+  margin: 0;
+  line-height: 1.2;
+  text-align: left;
+}
+
+/* New: Wrapper for Job Role and View Details */
+.cp_n_job-role-info {
+  display: flex;
+  justify-content: space-between; /* Pushes view details button to the right */
+  align-items: center;
+  margin-bottom: 15px; /* Space between this section and role details below */
+}
+
+.cp_n_job-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.cp_n_role-icon {
+  color: #5a67d8;
+  font-size: 20px;
+}
+
+.cp_n_role-title {
+  font-size: 18px; /* Size for job title */
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+}
+
+.cp_n_external-link {
+  color: #4299e1;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.cp_n_external-link:hover {
+  color: #3182ce;
+}
+
+.cp_n_view-details-btn {
+  background: none;
+  border: none;
+  color: #4299e1;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-weight: 500;
+  /* Removed margin-left as flexbox handles spacing */
+}
+
+.cp_n_view-details-btn:hover {
+  color: #3182ce;
+}
+
+/* Role Details (ID, Level, Type, Location) */
+.cp_n_role-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #718096;
+  margin-bottom: 15px; /* Space before status badge */
+  flex-wrap: wrap;
+}
+
+.cp_n_role-details span:not(:last-child)::after {
+  content: "•";
+  margin-left: 10px;
+  color: #cbd5e0;
+}
+
+/* Status Badge - Now at the bottom of the "Role Info" group */
+.cp_n_status-info-bottom { /* New class for this specific placement */
+    display: flex;
+    justify-content: flex-start; /* Aligns badge to the left */
+    margin-bottom: 20px; /* Space before contact info */
+    padding-bottom: 15px; /* Space from contact info */
+    border-bottom: 1px solid #f0f4f8; /* Separator line */
+}
+
+.cp_n_status-badge {
+  padding: 6px 15px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.cp_n_status-badge.cp_n_active {
+  background: #1a202c;
+  color: white;
+}
+
+.cp_n_status-badge.cp_n_inactive {
+  background: #cbd5e0;
+  color: #4a5568;
+}
+
+/* Contact Info (in a row) */
+.cp_n_contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Removed padding-top and border-top as it's now handled by .cp_n_status-info-bottom */
+}
+
+.cp_n_contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.cp_n_contact-icon {
+  margin-right: 8px;
+  color: #718096;
+  display: flex;
+  align-items: center;
+}
+
+.cp_n_contact-value {
+  color: #2d3748;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cp_n_name-card {
+    padding: 16px;
+  }
+
+  .cp_n_candidate-name {
+    font-size: 20px;
+  }
+
+  .cp_n_job-role-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cp_n_job-title-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px; /* Space between title wrapper and button when stacked */
+  }
+
+  .cp_n_role-title {
+    font-size: 16px;
+  }
+
+  .cp_n_view-details-btn {
+    margin-top: 5px;
+  }
+
+  .cp_n_role-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .cp_n_role-details span::after {
+    content: none !important;
+  }
+
+  .cp_n_status-info-bottom {
+    justify-content: flex-start; /* Keep left alignment */
+    margin-top: 10px; /* Adjusted margin for consistency */
+    padding-bottom: 10px; /* Adjusted padding */
+  }
+
+  .cp_n_contact-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,167 @@
+.cp_work-experience-wrapper {
+  width: 100%;
+  margin: 12px 0 0 0; /* Centered by default, modify to '24px 0 24px 0' for left-align */
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  color: #2d3748;
+}
+
+.cp_section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cp_experience-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.cp_experience-card:last-child {
+  margin-bottom: 0; /* No bottom margin for the last card */
+}
+
+.cp_experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.cp_job-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #2d3748;
+}
+
+.cp_company-info {
+  font-size: 15px;
+  color: #4a5568;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.cp_duration {
+  font-style: italic;
+  color: #718096;
+}
+
+.cp_toggle-button {
+  background: none;
+  border: none;
+  color: #2b6cb0; /* Blue for "Show More/Less" */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cp_toggle-button:hover {
+  background-color: #ebf4ff; /* Light blue on hover */
+}
+
+.cp_arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cp_arrow.down {
+  border-top: 5px solid #2b6cb0; /* Down arrow */
+}
+
+.cp_arrow.up {
+  border-bottom: 5px solid #2b6cb0; /* Up arrow */
+  transform: rotate(180deg); /* Rotate to make it point up */
+}
+
+.cp_technologies-list {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cp_technology-tag {
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.cp_expanded-details-section {
+  margin-top: 15px;
+}
+
+.cp_key-highlights,
+.cp_additional-achievements {
+  margin-top: 15px;
+}
+
+.cp_key-highlights:first-child,
+.cp_additional-achievements:first-child {
+    margin-top: 0;
+}
+
+.cp_key-highlights strong,
+.cp_additional-achievements strong {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #1a202c;
+}
+
+.cp_key-highlights ul,
+.cp_additional-achievements ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.cp_key-highlights li,
+.cp_additional-achievements li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #4a5568;
+}
+
+.cp_key-highlights li:last-child,
+.cp_additional-achievements li:last-child {
+  margin-bottom: 0;
+}
+
+.cp_no-experience {
+    width: 100%;
+    min-height: 120px;
+    margin: 12px auto 0 0;
+    padding: 60px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+    color: #2d3748;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}

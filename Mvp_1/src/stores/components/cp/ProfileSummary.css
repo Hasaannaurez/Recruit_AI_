@@ -1,0 +1,33 @@
+.cp_p_profile-summary {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 12px 0 0 0;
+  border: 1px solid #e2e8f0;
+}
+
+.cp_p_section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cp_p_section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+}
+
+.cp_p_summary-content {
+  margin-top: 16px;
+}
+
+.cp_p_summary-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+  text-align: justify;
+}

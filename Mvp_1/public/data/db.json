@@ -1,0 +1,516 @@
+{
+    "profiles": [
+        {
+            "generalDetails": {
+                "name": "Arun",
+                "currentJob": "NA",
+                "gender": "Male",
+                "education": {
+                    "degree": "B.Sc. in Computer Science",
+                    "university": "ABC University",
+                    "graduationYear": 2022
+                },
+                "skills": ["Web Development", "Machine Learning"],
+                "contact": {
+                    "email": "arun@example.com",
+                    "phone": "+1-234-567-8901",
+                    "linkedin": "LinkedIn Profile"
+                },
+                "certifications": ["AWS Certified Solutions Architect"]
+            },
+            "overallScore": {
+                "percentage": 75,
+                "rank": "35/400",
+                "percentile": "Among Top 10%"
+            },
+            "subscores": {
+                "webDevelopment": "High",
+                "machineLearning": "Medium"
+            },
+            "achievements": ["Awarded 'Best Developer' at XYZ Corp"],
+            "experience": {
+                "yearsOfExperience": 2,
+                "projectsCompleted": 5
+            },
+            "aiSummary": "This candidate has demonstrated expertise in Web Development and Machine Learning, with a strong focus on backend development and AI-driven solutions.",
+            "feedback": {
+                "advantages": [
+                    "Strong technical skills in Web Development and Machine Learning",
+                    "Consistently high performance in project execution"
+                ],
+                "disadvantages": [
+                    "Limited hands-on experience with cloud technologies",
+                    "Needs improvement in client communication skills"
+                ]
+            },
+            "status": "Hired"
+        },
+        {
+            "generalDetails": {
+                "name": "Sarah",
+                "currentJob": "Frontend Developer at Tech Corp",
+                "education": {
+                    "degree": "M.S. in Software Engineering",
+                    "university": "XYZ University",
+                    "graduationYear": 2021
+                },
+                "skills": ["React", "TypeScript", "UI/UX Design"],
+                "contact": {
+                    "email": "sarah@example.com",
+                    "phone": "+1-987-654-3210",
+                    "linkedin": "LinkedIn Profile"
+                },
+                "certifications": ["Google UX Design Professional"]
+            },
+            "overallScore": {
+                "percentage": 82,
+                "rank": "28/400",
+                "percentile": "Among Top 7%"
+            },
+            "subscores": {
+                "frontendDevelopment": "Very High",
+                "uiDesign": "High"
+            },
+            "achievements": ["Led redesign of company's flagship product"],
+            "experience": {
+                "yearsOfExperience": 3,
+                "projectsCompleted": 8
+            },
+            "aiSummary": "This candidate excels in frontend development with strong UI/UX capabilities and proven leadership in product design.",
+            "feedback": {
+                "advantages": [
+                    "Expert in modern frontend technologies",
+                    "Strong design thinking and user-centric approach"
+                ],
+                "disadvantages": [
+                    "Limited backend development experience",
+                    "Could improve on system architecture knowledge"
+                ]
+            },
+            "status": "Hired"
+        },
+        {
+            "generalDetails": {
+                "name": "Elena",
+                "currentJob": "Senior Backend Developer at DataTech",
+                "education": {
+                    "degree": "M.S. in Computer Engineering",
+                    "university": "Stanford University",
+                    "graduationYear": 2020
+                },
+                "skills": ["Java", "Spring Boot", "Microservices", "Kubernetes"],
+                "contact": {
+                    "email": "elena@example.com",
+                    "phone": "+1-555-123-4567",
+                    "linkedin": "LinkedIn Profile"
+                },
+                "certifications": ["Kubernetes Administrator (CKA)", "Java 11 Professional"]
+            },
+            "overallScore": {
+                "percentage": 88,
+                "rank": "15/400",
+                "percentile": "Among Top 4%"
+            },
+            "subscores": {
+                "backendDevelopment": "Very High",
+                "systemDesign": "High"
+            },
+            "achievements": [
+                "Led migration of monolith to microservices",
+                "Reduced system latency by 40%"
+            ],
+            "experience": {
+                "yearsOfExperience": 5,
+                "projectsCompleted": 12
+            },
+            "aiSummary": "Senior backend developer with exceptional system design skills and proven track record in microservices architecture.",
+            "feedback": {
+                "advantages": [
+                    "Strong system architecture knowledge",
+                    "Excellent problem-solving skills"
+                ],
+                "disadvantages": [
+                    "Limited frontend experience",
+                    "Could improve on documentation"
+                ]
+            },
+            "status": "In-review"
+        },
+        {
+            "generalDetails": {
+                "name": "Marcus",
+                "currentJob": "ML Engineer at AI Solutions",
+                "education": {
+                    "degree": "Ph.D. in Machine Learning",
+                    "university": "MIT",
+                    "graduationYear": 2021
+                },
+                "skills": ["Python", "TensorFlow", "PyTorch", "Deep Learning"],
+                "contact": {
+                    "email": "marcus@example.com",
+                    "phone": "+1-555-987-6543",
+                    "linkedin": "LinkedIn Profile"
+                },
+                "certifications": ["TensorFlow Developer Certificate", "AWS Machine Learning Specialty"]
+            },
+            "overallScore": {
+                "percentage": 92,
+                "rank": "8/400",
+                "percentile": "Among Top 2%"
+            },
+            "subscores": {
+                "machineLearning": "Exceptional",
+                "dataScience": "Very High"
+            },
+            "achievements": [
+                "Published 3 papers in top ML conferences",
+                "Developed award-winning NLP model"
+            ],
+            "experience": {
+                "yearsOfExperience": 4,
+                "projectsCompleted": 7
+            },
+            "aiSummary": "Highly specialized ML engineer with strong research background and practical implementation experience.",
+            "feedback": {
+                "advantages": [
+                    "Deep expertise in ML algorithms",
+                    "Strong research capabilities"
+                ],
+                "disadvantages": [
+                    "May be overqualified for some positions",
+                    "Limited web development experience"
+                ]
+            },
+            "status": "rejected"
+        },
+        {
+            "generalDetails": {
+                "name": "Priya",
+                "currentJob": "DevOps Engineer at CloudScale",
+                "education": {
+                    "degree": "B.E. in Information Technology",
+                    "university": "NIT Trichy",
+                    "graduationYear": 2019
+                },
+                "skills": ["AWS", "Docker", "Jenkins", "Terraform"],
+                "contact": {
+                    "email": "priya@example.com",
+                    "phone": "+1-555-789-0123",
+                    "linkedin": "LinkedIn Profile"
+                },
+                "certifications": ["AWS DevOps Professional", "HashiCorp Certified Terraform Associate"]
+            },
+            "overallScore": {
+                "percentage": 85,
+                "rank": "22/400",
+                "percentile": "Among Top 6%"
+            },
+            "subscores": {
+                "devops": "Very High",
+                "cloudInfrastructure": "High"
+            },
+            "achievements": [
+                "Reduced deployment time by 70%",
+                "Implemented zero-downtime deployment"
+            ],
+            "experience": {
+                "yearsOfExperience": 4,
+                "projectsCompleted": 15
+            },
+            "aiSummary": "Skilled DevOps engineer with strong focus on automation and cloud infrastructure optimization.",
+            "feedback": {
+                "advantages": [
+                    "Excellent automation skills",
+                    "Strong problem-solving abilities"
+                ],
+                "disadvantages": [
+                    "Could improve on cost optimization",
+                    "Limited experience with Azure"
+                ]
+            },
+            "status": "interviews"
+        },
+        {
+            "generalDetails": {
+                "name": "Alex",
+                "currentJob": "Mobile Developer at AppWorks",
+                "education": {
+                    "degree": "B.S. in Mobile Computing",
+                    "university": "University of California",
+                    "graduationYear": 2020
+                },
+                "skills": ["Swift", "Kotlin", "React Native", "Firebase"],
+                "contact": {
+                    "email": "alex@example.com",
+                    "phone": "+1-555-456-7890",
+                    "linkedin": "LinkedIn Profile"
+                },
+                "certifications": ["Apple Certified iOS Developer", "Google Associate Android Developer"]
+            },
+            "overallScore": {
+                "percentage": 79,
+                "rank": "45/400",
+                "percentile": "Among Top 12%"
+            },
+            "subscores": {
+                "mobileDevelopment": "High",
+                "crossPlatform": "Medium"
+            },
+            "achievements": [
+                "Developed top 10 fitness app",
+                "4.8 star average app rating"
+            ],
+            "experience": {
+                "yearsOfExperience": 3,
+                "projectsCompleted": 10
+            },
+            "aiSummary": "Talented mobile developer with strong focus on user experience and app performance.",
+            "feedback": {
+                "advantages": [
+                    "Strong mobile development skills",
+                    "Good understanding of app stores"
+                ],
+                "disadvantages": [
+                    "Limited backend knowledge",
+                    "Needs improvement in testing"
+                ]
+            },
+            "status": "offered"
+        },
+        {
+            "generalDetails": {
+                "name": "Maya",
+                "currentJob": "Security Engineer at SecureNet",
+                "education": {
+                    "degree": "M.S. in Cybersecurity",
+                    "university": "Georgia Tech",
+                    "graduationYear": 2018
+                },
+                "skills": ["Penetration Testing", "Security Auditing", "Python", "Network Security"],
+                "contact": {
+                    "email": "maya@example.com",
+                    "phone": "+1-555-234-5678",
+                    "linkedin": "LinkedIn Profile"
+                },
+                "certifications": ["CISSP", "CEH", "CompTIA Security+"]
+            },
+            "overallScore": {
+                "percentage": 87,
+                "rank": "18/400",
+                "percentile": "Among Top 5%"
+            },
+            "subscores": {
+                "security": "Very High",
+                "networking": "High"
+            },
+            "achievements": [
+                "Discovered critical zero-day vulnerability",
+                "Implemented enterprise-wide security framework"
+            ],
+            "experience": {
+                "yearsOfExperience": 6,
+                "projectsCompleted": 20
+            },
+            "aiSummary": "Experienced security professional with strong focus on proactive threat detection and mitigation.",
+            "feedback": {
+                "advantages": [
+                    "Deep security expertise",
+                    "Strong analytical skills"
+                ],
+                "disadvantages": [
+                    "Could improve on communication with non-technical stakeholders",
+                    "Limited development experience"
+                ]
+            },
+            "status": "Hired"
+        },
+        {
+            "generalDetails": {
+                "name": "Jordan",
+                "currentJob": "Data Engineer at BigData Inc",
+                "education": {
+                    "degree": "B.S. in Data Science",
+                    "university": "University of Michigan",
+                    "graduationYear": 2019
+                },
+                "skills": ["Apache Spark", "SQL", "Python", "Airflow"],
+                "contact": {
+                    "email": "jordan@example.com",
+                    "phone": "+1-555-345-6789",
+                    "linkedin": "LinkedIn Profile"
+                },
+                "certifications": ["Databricks Certified Associate", "Google Cloud Professional Data Engineer"]
+            },
+            "overallScore": {
+                "percentage": 83,
+                "rank": "25/400",
+                "percentile": "Among Top 7%"
+            },
+            "subscores": {
+                "dataEngineering": "High",
+                "bigData": "Very High"
+            },
+            "achievements": [
+                "Built real-time analytics pipeline",
+                "Reduced data processing costs by 50%"
+            ],
+            "experience": {
+                "yearsOfExperience": 4,
+                "projectsCompleted": 9
+            },
+            "aiSummary": "Skilled data engineer with expertise in building scalable data pipelines and optimization.",
+            "feedback": {
+                "advantages": [
+                    "Strong data processing skills",
+                    "Good optimization abilities"
+                ],
+                "disadvantages": [
+                    "Limited experience with real-time systems",
+                    "Could improve on data visualization"
+                ]
+            },
+            "status": "In-review"
+        },
+        {
+            "generalDetails": {
+                "name": "Liam",
+                "currentJob": "Game Developer at GameCraft",
+                "education": {
+                    "degree": "B.A. in Game Design",
+                    "university": "DigiPen Institute",
+                    "graduationYear": 2020
+                },
+                "skills": ["Unity", "C#", "3D Modeling", "Game Physics"],
+                "contact": {
+                    "email": "liam@example.com",
+                    "phone": "+1-555-567-8901",
+                    "linkedin": "LinkedIn Profile"
+                },
+                "certifications": ["Unity Certified Developer", "Unreal Engine Associate"]
+            },
+            "overallScore": {
+                "percentage": 78,
+                "rank": "50/400",
+                "percentile": "Among Top 13%"
+            },
+            "subscores": {
+                "gameDevelopment": "High",
+                "graphics": "Medium"
+            },
+            "achievements": [
+                "Released indie game with 100K+ downloads",
+                "Won Best Student Game Award"
+            ],
+            "experience": {
+                "yearsOfExperience": 3,
+                "projectsCompleted": 6
+            },
+            "aiSummary": "Creative game developer with strong technical skills and understanding of game mechanics.",
+            "feedback": {
+                "advantages": [
+                    "Strong game development skills",
+                    "Creative problem solver"
+                ],
+                "disadvantages": [
+                    "Limited experience with multiplayer games",
+                    "Could improve on optimization"
+                ]
+            },
+            "status": "rejected"
+        },
+        {
+            "generalDetails": {
+                "name": "Nina",
+                "currentJob": "Blockchain Developer at ChainTech",
+                "education": {
+                    "degree": "M.S. in Distributed Systems",
+                    "university": "ETH Zurich",
+                    "graduationYear": 2021
+                },
+                "skills": ["Solidity", "Web3.js", "Smart Contracts", "DApp Development"],
+                "contact": {
+                    "email": "nina@example.com",
+                    "phone": "+1-555-678-9012",
+                    "linkedin": "LinkedIn Profile"
+                },
+                "certifications": ["Certified Blockchain Developer", "Ethereum Developer Certification"]
+            },
+            "overallScore": {
+                "percentage": 86,
+                "rank": "20/400",
+                "percentile": "Among Top 5%"
+            },
+            "subscores": {
+                "blockchain": "Very High",
+                "smartContracts": "High"
+            },
+            "achievements": [
+                "Developed successful DeFi protocol",
+                "Created innovative NFT marketplace"
+            ],
+            "experience": {
+                "yearsOfExperience": 3,
+                "projectsCompleted": 8
+            },
+            "aiSummary": "Innovative blockchain developer with strong focus on DeFi and smart contract development.",
+            "feedback": {
+                "advantages": [
+                    "Deep blockchain knowledge",
+                    "Strong cryptography understanding"
+                ],
+                "disadvantages": [
+                    "Limited traditional development experience",
+                    "Needs improvement in UI/UX"
+                ]
+            },
+            "status": "interviews"
+        },
+        {
+            "generalDetails": {
+                "name": "Carlos",
+                "currentJob": "Embedded Systems Engineer at IoTech",
+                "education": {
+                    "degree": "B.E. in Electronics Engineering",
+                    "university": "Technical University of Madrid",
+                    "graduationYear": 2019
+                },
+                "skills": ["C++", "Arduino", "RTOS", "IoT Protocols"],
+                "contact": {
+                    "email": "carlos@example.com",
+                    "phone": "+1-555-789-0123",
+                    "linkedin": "LinkedIn Profile"
+                },
+                "certifications": ["ARM Certified Engineer", "IoT Foundation Certificate"]
+            },
+            "overallScore": {
+                "percentage": 81,
+                "rank": "30/400",
+                "percentile": "Among Top 8%"
+            },
+            "subscores": {
+                "embeddedSystems": "High",
+                "iotDevelopment": "Very High"
+            },
+            "achievements": [
+                "Developed energy-efficient IoT system",
+                "Patent pending for smart sensor design"
+            ],
+            "experience": {
+                "yearsOfExperience": 4,
+                "projectsCompleted": 11
+            },
+            "aiSummary": "Specialized embedded systems engineer with strong focus on IoT and hardware optimization.",
+            "feedback": {
+                "advantages": [
+                    "Strong hardware knowledge",
+                    "Excellent optimization skills"
+                ],
+                "disadvantages": [
+                    "Limited cloud integration experience",
+                    "Could improve on documentation"
+                ]
+            },
+            "status": "offered"
+        }
+    ]
+}

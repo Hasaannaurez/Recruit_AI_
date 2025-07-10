@@ -1,0 +1,489 @@
+.job-role {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-role .div {
+  height: 60px; /* Keep this height */
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  padding-top: 8px; /* Add internal padding to push content down from the very top */
+}
+
+.job-role .group {
+  height: 58px;
+  position: absolute;
+}
+
+.job-role .frame {
+  align-items: center;
+  display: flex;
+  height: 46px;
+  justify-content: space-between;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Left navigation section */
+.job-role .left-nav-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Right navigation section */
+.job-role .right-nav-section {
+  display: flex;
+  align-items: center;
+}
+
+.job-role .div-wrapper {
+  align-items: center;
+  border: 0.54px solid;
+  border-radius: 32.65px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: -7.06px;
+  margin-top: -7.06px;
+  overflow: hidden;
+  padding: 13.06px 12px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.job-role .div-wrapper:hover {
+  background-color: #5DADE2; /* Darker sky blue on hover */
+}
+
+.job-role .text-wrapper {
+  color: white; /* White text on sky blue background */
+  font-family: var(--header-5-font-family);
+  font-size: var(--header-5-font-size);
+  font-style: var(--header-5-font-style);
+  font-weight: var(--header-5-font-weight);
+  letter-spacing: var(--header-5-letter-spacing);
+  line-height: var(--header-5-line-height);
+  margin-top: -0.54px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.job-role .frame-2 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px; /* Proper spacing between navigation items */
+  margin-bottom: -6.49px;
+  margin-top: -6.49px;
+  position: relative;
+  flex-wrap: nowrap;
+}
+
+.job-role .frame-3 {
+  align-items: center;
+  border-radius: 32.65px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 20px;
+  height: 58.97px;
+  padding: 3.26px 8.71px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* Fixed: Make entire button clickable and add hover effects */
+.job-role .frame-4-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  border-radius: 32.65px;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.job-role .frame-4-link:hover {
+  background-color: #007bff; /* Sky blue hover effect */
+}
+
+.job-role .frame-4-link:hover .text-wrapper-2 {
+  color: white;
+}
+
+.job-role .frame-4-link:hover .text-wrapper-2 li::after {
+  transform: scaleX(1);
+  background-color: white;
+}
+
+.job-role .frame-4 {
+  align-items: center;
+  border-radius: 32.65px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 17.41px;
+  justify-content: center;
+  margin-bottom: -0.34px;
+  margin-top: -0.34px;
+  overflow: hidden;
+  padding: 13.06px 17.41px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.job-role .text-wrapper-2 {
+  color: var(--disabled-text);
+  font-family: var(--body-2-font-family);
+  font-size: var(--body-2-font-size);
+  font-style: var(--body-2-font-style);
+  font-weight: var(--body-2-font-weight);
+  letter-spacing: var(--body-2-letter-spacing);
+  line-height: var(--body-2-line-height);
+  margin-top: -1.09px;
+  position: relative;
+  width: fit-content;
+  transition: color 0.3s ease;
+}
+
+.job-role .text-wrapper-2 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.job-role .text-wrapper-2 li {
+  list-style: none;
+  position: relative;
+}
+
+/* Fixed: Underline effect on button hover */
+.job-role .text-wrapper-2 li::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; 
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for entire button area */
+.job-role .frame-4-link:hover .text-wrapper-2 li::after {
+  transform: scaleX(1);
+}
+
+.job-role .text-wrapper-3 {
+  color: var(--body);
+  font-family: var(--body-2-font-family);
+  font-size: var(--body-2-font-size);
+  font-style: var(--body-2-font-style);
+  font-weight: var(--body-2-font-weight);
+  letter-spacing: var(--body-2-letter-spacing);
+  line-height: var(--body-2-line-height);
+  margin-top: -1.09px;
+  position: relative;
+  width: fit-content;
+  transition: color 0.3s ease;
+}
+
+.job-role .text-wrapper-3 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.job-role .text-wrapper-3 li {
+  list-style: none;
+}
+
+.job-role .frame-5 {
+  align-items: center;
+  background-color: var(--primary-actions);
+  border-radius: 32.65px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 17.41px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 13.06px 17.41px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.job-role .frame-5:hover {
+  background-color: red;
+}
+
+.job-role .logout-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.job-role .logout-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--alt-background);
+  transition: color 0.3s ease;
+}
+
+.job-role .frame-5:hover .logout-icon {
+  color: white;
+}
+
+.job-role .text-wrapper-4 {
+  color: var(--alt-background);
+  font-family: var(--body-2-font-family);
+  font-size: var(--body-2-font-size);
+  font-style: var(--body-2-font-style);
+  font-weight: var(--body-2-font-weight);
+  letter-spacing: var(--body-2-letter-spacing);
+  line-height: var(--body-2-line-height);
+  margin-top: -1.09px;
+  position: relative;
+  width: fit-content;
+}
+
+.job-role .text-wrapper-4 li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.job-role .text-wrapper-4 button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.job-role .ios-icon-settings-wrapper {
+  align-items: center;
+  background-color: var(--alt-background);
+  border-radius: 32.65px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10.18px;
+  padding: 10.18px;
+  position: relative;
+}
+
+.job-role .ios-icon-settings {
+  height: 28.62px !important;
+  position: relative !important;
+  width: 28.62px !important;
+}
+
+.job-role .ios-icon-wrapper {
+  align-items: center;
+  background-color: var(--alt-background);
+  border-radius: 28.25px;
+  display: flex;
+  gap: 7.53px;
+  padding: 7.53px;
+  position: relative;
+  width: 48.97px;
+}
+
+.job-role .ios-icon {
+  height: 33.91px !important;
+  margin-right: -0.01px !important;
+  position: relative !important;
+  width: 33.91px !important;
+}
+
+.job-role .rectangle {
+  background-color: var(--body);
+  border-radius: 1.09px 1.09px 0px 0px;
+  height: 2px;
+  left: 482px;
+  position: absolute;
+  top: 46px;
+  width: 100px;
+}
+
+
+/* Content blocks that were affected - now with proper spacing */
+.job-role .frame-6 {
+  background-color: var(--alt-background);
+  border-radius: 32px;
+  height: 661px;
+  left: 837px;
+  position: absolute;
+  top: 258px; /* Changed from 178px to 258px (178 + 80) */
+  width: 403px;
+}
+
+.job-role .frame-7 {
+  background-color: var(--alt-background);
+  border-radius: 32px;
+  height: 188px;
+  left: 40px;
+  position: absolute;
+  top: 731px; /* Changed from 651px to 731px (651 + 80) */
+  width: 789px;
+}
+
+.job-role .job-roles {
+  height: 465px;
+  left: 40px;
+  position: absolute;
+  top: 258px; /* Changed from 178px to 258px (178 + 80) */
+  width: 789px;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .job-role .group {
+    left: 20px;
+    width: calc(100% - 40px);
+  }
+  
+  .job-role .frame {
+    width: 100%;
+  }
+  
+  .job-role .frame-2 {
+    gap: 20px;
+  }
+  
+  .job-role .frame-4 {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  
+  .job-role .text-wrapper-2,
+  .job-role .text-wrapper-3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .job-role .left-nav-section {
+    gap: 20px;
+  }
+  
+  .job-role .frame-2 {
+    gap: 15px;
+  }
+  
+  .job-role .frame-4 {
+    padding: 8px 10px;
+  }
+  
+  .job-role .text-wrapper-2,
+  .job-role .text-wrapper-3 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-role .div {
+    height: auto;
+    min-height: 80px;
+  }
+  
+  .job-role .group {
+    height: auto;
+    position: relative;
+    top: 15px;
+    padding-bottom: 15px;
+    left: 20px;
+    width: calc(100% - 40px);
+  }
+  
+  .job-role .frame {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .job-role .left-nav-section {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .job-role .frame-2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .job-role .text-wrapper-2,
+  .job-role .text-wrapper-3 {
+    font-size: 12px;
+  }
+
+  /* Adjust body padding for mobile */
+  body {
+    padding-top: 120px;
+  }
+  
+  .page-content {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .job-role .group {
+    left: 10px;
+    width: calc(100% - 20px);
+  }
+  
+  .job-role .frame-4 {
+    padding: 6px 8px;
+  }
+  
+  .job-role .div-wrapper {
+    padding: 8px 10px;
+  }
+  
+  .job-role .text-wrapper {
+    font-size: 14px;
+  }
+  
+  .job-role .left-nav-section {
+    gap: 10px;
+  }
+  
+  .job-role .frame-2 {
+    gap: 5px;
+  }
+}
+
+.left-nav-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.right-nav-section {
+    display: flex;
+    align-items: center;
+}

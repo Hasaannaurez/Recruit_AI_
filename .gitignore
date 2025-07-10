@@ -1,0 +1,8 @@
+temp.txt
+.venv/
+index.html
+GoogleAuth/
+db.sqlite3
+node_modules
+package*
+temp*

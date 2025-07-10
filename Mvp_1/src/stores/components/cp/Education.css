@@ -1,0 +1,178 @@
+.cp_e_education-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 12px 0 0 0;
+  border: 1px solid #e2e8f0;
+}
+
+.cp_e_section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cp_e_section-icon { /* This class wasn't in the original JSX, but keeping it for consistency if it were added later */
+  margin-right: 8px;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+}
+
+.cp_e_section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+}
+
+.cp_e_highest-degree-badge {
+  background: #edf2f7;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.cp_e_badge-text {
+  font-size: 12px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.cp_e_education-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: #fafafa;
+}
+
+.cp_e_degree-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.cp_e_degree-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+}
+
+.cp_e_show-more-btn {
+  background: none;
+  border: none;
+  color: #4299e1;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.cp_e_show-more-btn:hover {
+  background: #f0f8ff;
+  color: #3182ce;
+}
+
+.cp_e_rotate {
+  transition: transform 0.2s ease;
+}
+
+.cp_e_rotate-down {
+  transform: rotate(0deg);
+}
+
+.cp_e_rotate-up {
+  transform: rotate(180deg);
+}
+
+.cp_e_edu-main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+.cp_e_edu-info {
+  flex: 1;
+}
+
+.cp_e_institution {
+  font-size: 14px;
+  color: #4299e1;
+  margin: 0 0 4px 0;
+  font-weight: 500;
+}
+
+.cp_e_edu-year {
+  font-size: 12px;
+  color: #718096;
+}
+
+.cp_e_grade-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cp_e_grade-label {
+  font-size: 12px;
+  color: #718096;
+}
+
+.cp_e_grade-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+  background: #f7fafc;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+.cp_e_highlights {
+  display: block;
+}
+
+.cp_e_education-highlights {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.cp_e_highlights-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 8px 0;
+}
+
+.cp_e_highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cp_e_highlight-item {
+  font-size: 13px;
+  color: #4a5568;
+  margin-bottom: 4px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.cp_e_highlight-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #718096;
+}

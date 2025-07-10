@@ -1,0 +1,70 @@
+{
+    "jobRoles": [
+      {
+        "title": "Sales and Marketing",
+        "hiringDeadline": "4/16",
+        "stats": {
+          "activeJobs": 10,
+          "applicants": 26,
+          "interviews": 2,
+          "submissions": 0,
+          "offers": 0
+        }
+      },
+      {
+        "title": "Software Development",
+        "hiringDeadline": "4/16",
+        "stats": {
+          "activeJobs": 10,
+          "applicants": 26,
+          "interviews": 2,
+          "submissions": 0,
+          "offers": 0
+        }
+      },
+      {
+        "title": "Product Management",
+        "hiringDeadline": "4/16",
+        "stats": {
+          "activeJobs": 10,
+          "applicants": 26,
+          "interviews": 2,
+          "submissions": 0,
+          "offers": 0
+        }
+      },
+      {
+        "title": "Human Resources",
+        "hiringDeadline": "4/16",
+        "stats": {
+          "activeJobs": 10,
+          "applicants": 26,
+          "interviews": 2,
+          "submissions": 0,
+          "offers": 0
+        }
+      },
+      {
+        "title": "Customer Support",
+        "hiringDeadline": "4/16",
+        "stats": {
+          "activeJobs": 10,
+          "applicants": 26,
+          "interviews": 2,
+          "submissions": 0,
+          "offers": 0
+        }
+      },
+      {
+        "title": "Data Science",
+        "hiringDeadline": "4/16",
+        "stats": {
+          "activeJobs": 10,
+          "applicants": 26,
+          "interviews": 2,
+          "submissions": 0,
+          "offers": 0
+        }
+      }
+    ]
+}

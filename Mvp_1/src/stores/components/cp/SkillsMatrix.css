@@ -1,0 +1,95 @@
+.skills-matrix-wrapper {
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  color: #2d3748;
+  max-width: 100%;
+  margin: 12px 0 0 auto;
+}
+
+.skills-matrix-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2b6cb0;
+  margin-bottom: 16px;
+}
+
+.s_section {
+  margin-top: 20px;
+}
+
+.s_section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b6cb0;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skill-group {
+  margin-bottom: 16px;
+}
+
+.group-title {
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 4px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-color: #f9fafb;
+  color: #1a202c;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.green {
+  border-color: #38a169;
+  color: #276749;
+}
+
+.purple {
+  border-color: #805ad5;
+  color: #553c9a;
+}
+
+.orange {
+  border-color: #ed8936;
+  color: #c05621;
+}
+
+.gray {
+  border-color: #a0aec0;
+  color: #4a5568;
+}
+
+.blue {
+  border-color: #3182ce;
+  color: #2b6cb0;
+}
+
+
+.soft {
+  border-color: #d69e2e;
+  color: #744210;
+}
+
+.empty-text {
+  font-style: italic;
+  font-size: 13px;
+  color: #a0aec0;
+}

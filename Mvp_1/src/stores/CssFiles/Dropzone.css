@@ -1,0 +1,21 @@
+.dropzone {
+    border: 2px dashed #aaa;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  
+  /* Active Dragging State */
+  .dropzone.active {
+    background-color: #e0f7fa;
+    border-color: #0288d1;
+    color: #0288d1;
+  }
+  
+  /* Dropzone Hover Effect */
+  .dropzone:hover {
+    background-color: #f1f1f1;
+  }

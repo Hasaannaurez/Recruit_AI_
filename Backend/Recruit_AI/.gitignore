@@ -1,0 +1,19 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc/
+**/__pycache__/
+**/*.pyc
+
+# Ignore SQLite database
+**/db.sqlite3
+
+# Ignore Virtual Environments
+myenv/
+venv/
+.venv/
+
+# Ignore all .env files anywhere in the repo
+**/.env
+
+media
+staticfiles

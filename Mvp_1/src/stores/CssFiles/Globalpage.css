@@ -1,0 +1,327 @@
+.Global_job-container {
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    margin-top: 50px;
+}
+
+.Global_job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px;
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.Global_job-title-section h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #111827;
+    margin: 0 0 8px 0;
+}
+
+.Global_main-content {
+    display: flex;
+    background-color: white;
+    min-height: calc(100vh - 200px);
+}
+
+/* Sidebar styles */
+.Global_sidebar {
+    width: 280px;
+    border-right: 1px solid #e5e7eb;
+    padding: 24px;
+    background-color: white;
+}
+
+.Global_filter-section {
+    width: 100%;
+}
+
+.Global_filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.Global_filter-header h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #111827;
+    margin: 0;
+}
+
+.Global_clear-all {
+    background: none;
+    border: none;
+    color: #3b82f6;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Global_clear-all:hover {
+    color: #2563eb;
+}
+
+/* Filter group styles */
+.Global_filter-group {
+    margin-bottom: 32px;
+}
+
+.Global_filter-group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.Global_filter-group-header h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111827;
+    margin: 0;
+}
+
+.Global_expand-icon {
+    color: #6b7280;
+    font-size: 18px;
+}
+
+.Global_filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Global_filter-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #374151;
+    cursor: pointer;
+}
+
+.Global_filter-option input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.Global_filter-option input[type="checkbox"]:checked {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.Global_applicants-section {
+    flex: 1;
+    padding: 24px;
+}
+
+.Global_phase-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+.Global_filter-option {
+    padding: 8px 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.Global_filter-option:hover {
+    background-color: #f3f4f6;
+}
+/* Phase dropdown */
+.Global_phase-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 0.6rem 2.5rem 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #111827;
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1.25rem 1.25rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.Global_phase-select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+}
+
+/* Update Phase button */
+.Global_phase-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.Global_phase-button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Selection info styles */
+.Global_selection-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.Global_selected-count {
+    font-size: 14px;
+    color: #3b82f6;
+}
+
+.Global_delete-selected {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+.Global_delete-selected:hover {
+    color: #374151;
+}
+
+/* Table styles */
+.Global_applicants-table {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Global_table-header {
+    display: grid;
+    grid-template-columns: 80px 1fr 200px 150px;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.Global_header-cell {
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.Global_table-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 200px 150px;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.2s;
+}
+
+.Global_table-row:hover {
+    background-color: #f9fafb;
+}
+
+.Global_table-row:last-child {
+    border-bottom: none;
+}
+
+.Global_table-cell {
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #374151;
+    display: flex;
+    align-items: center;
+}
+
+.Global_checkbox-cell {
+    justify-content: center;
+}
+
+.Global_applicant-name {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.Global_applicant-name:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.Global_phase-badge {
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+/* .Global_education-cell {
+    font-size: 13px;
+    color: #6b7280;
+} */
+
+.Global_phase-badge {
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+
+
+.Global_phase-new-applicant {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.Global_phase-interview-round1 {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.Global_phase-hired {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.Global_phase-rejected {
+    background-color: #fee2e2;
+    color: #dc2626;
+}

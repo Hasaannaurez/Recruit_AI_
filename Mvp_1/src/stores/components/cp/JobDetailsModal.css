@@ -1,0 +1,235 @@
+.cp_m_modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: cp_m_fadeIn 0.3s ease-out;
+}
+
+.cp_m_modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 0;
+  width: 90%;
+  max-width: 700px; /* Increased max-width for more content */
+  max-height: 90vh; /* Allow more height */
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); /* Stronger shadow */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  animation: cp_m_slideIn 0.3s ease-out;
+}
+
+.cp_m_modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px; /* Adjusted padding */
+  border-bottom: 1px solid #e2e8f0;
+  flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.cp_m_modal-title {
+  font-size: 22px; /* Slightly larger title */
+  font-weight: 700; /* Bolder title */
+  color: #2d3748;
+  margin: 0;
+}
+
+.cp_m_modal-close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px; /* Larger hit area */
+  border-radius: 8px;
+  color: #718096;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cp_m_modal-close-btn:hover {
+  background: #f0f4f8; /* Lighter hover background */
+  color: #2d3748;
+}
+
+.cp_m_modal-body {
+  padding: 24px;
+  flex-grow: 1; /* Allow body to grow and take available space */
+  overflow-y: auto; /* Enable scrolling for the body content */
+}
+
+.cp_m_job-main-info {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.cp_m_job-title {
+  font-size: 28px; /* More prominent job title */
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.cp_m_job-id {
+  font-size: 14px;
+  color: #718096;
+  margin: 0 0 15px 0;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* Monospaced for ID */
+}
+
+.cp_m_job-meta-details {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 15px; /* Spacing between meta items */
+  align-items: center;
+}
+
+.cp_m_meta-item {
+  font-size: 13px;
+  color: #4a5568;
+  background: #edf2f7;
+  padding: 6px 12px;
+  border-radius: 6px;
+  white-space: nowrap; /* Prevent text wrapping */
+  display: flex; /* Make it a flex container to align icon */
+  align-items: center; /* Vertically align icon and text */
+}
+
+/* Style for the location icon within the meta-item */
+.cp_m_location-item svg {
+  margin-right: 5px; /* Space between icon and text */
+  color: #5a67d8; /* Color for the icon */
+  font-size: 14px; /* Adjust icon size */
+}
+
+
+.cp_m_status-badge {
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize; /* Capitalize 'active'/'inactive' */
+  white-space: nowrap;
+}
+
+.cp_m_status-badge.cp_m_active {
+  background: #1a202c;
+  color: white;
+}
+
+.cp_m_status-badge.cp_m_inactive {
+  background: #cbd5e0;
+  color: #4a5568;
+}
+
+.cp_m_section {
+  margin-bottom: 24px;
+}
+
+.cp_m_section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 12px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #e2e8f0; /* Dashed separator for sections */
+}
+
+.cp_m_text-content {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+  white-space: pre-wrap; /* Preserve whitespace and line breaks from input */
+}
+
+.cp_m_list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cp_m_list-item {
+  font-size: 14px;
+  color: #4a5568;
+  margin-bottom: 8px;
+  padding-left: 25px; /* More space for bullet */
+  position: relative;
+  line-height: 1.5;
+  white-space: pre-wrap; /* Preserve whitespace and line breaks from input */
+}
+
+.cp_m_list-item::before {
+  content: "•"; /* Use a standard bullet */
+  position: absolute;
+  left: 0;
+  color: #5a67d8; /* Distinct color for bullets */
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1; /* Align bullet vertically */
+}
+
+/* Animations */
+@keyframes cp_m_fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes cp_m_slideIn {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cp_m_modal-content {
+    width: 95%;
+    max-width: none;
+  }
+
+  .cp_m_modal-header {
+    padding: 16px 20px;
+  }
+
+  .cp_m_modal-title {
+    font-size: 20px;
+  }
+
+  .cp_m_modal-body {
+    padding: 20px;
+  }
+
+  .cp_m_job-title {
+    font-size: 24px;
+  }
+
+  .cp_m_job-meta-details {
+    flex-direction: column; /* Stack meta items on small screens */
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .cp_m_meta-item {
+    width: auto; /* Allow items to take natural width */
+  }
+
+  .cp_m_section-title {
+    font-size: 16px;
+  }
+
+  .cp_m_text-content,
+  .cp_m_list-item {
+    font-size: 13px;
+  }
+}

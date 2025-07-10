@@ -1,0 +1,173 @@
+/* components/cp/Certifications.css */
+
+.cp_certifications-container {
+  background: #ffffff;
+  border-radius: 12px;
+  margin: 12px 0 0 0; /* Space below this card when in a column */
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 100%; /* Important for column layout */
+}
+
+.cp_certifications-section,
+.cp_additional-info-section {
+  margin-bottom: 24px;
+}
+/* Remove .cp_achievements-section from here */
+
+.cp_subsection-title {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.cp_certifications-list {
+  display: flex;
+  flex-direction: column; /* Changed to column for individual tag-like items */
+  gap: 8px; /* Space between individual certification items */
+}
+
+.cp_certification-item {
+  display: flex; /* Use flex for name, org, year on one line */
+  align-items: baseline; /* Align text baselines */
+  background: #ebf8ff; /* Lighter blue background */
+  color: #2c5282; /* Darker blue text */
+  padding: 8px 15px; /* Adjusted padding */
+  border-radius: 25px; /* More rounded pill shape */
+  font-size: 14px; /* Adjusted font size */
+  font-weight: 500;
+  /* Removed margin-right and margin-bottom if this is for block items */
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  border: 1px solid #90cdf4; /* Subtle border */
+}
+
+.cp_certification-item:hover {
+  background: #e1effe; /* Slightly darker light blue on hover */
+  cursor: pointer;
+}
+
+.cp_certification-name {
+  font-weight: 600;
+}
+
+.cp_certification-org {
+  font-weight: 400;
+  opacity: 0.9;
+  margin-left: 4px; /* Space after name */
+}
+
+.cp_certification-year {
+  font-weight: 400;
+  opacity: 0.8;
+  margin-left: 4px; /* Space after org */
+}
+
+/* Removed .cp_achievements-list and .cp_achievement-item styles */
+/* They will go into Achievements.css */
+
+
+.cp_additional-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cp_additional-info-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.cp_additional-info-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #3b82f6;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cp_additional-info-item:last-child {
+  margin-bottom: 0;
+}
+
+.cp_additional-info-section {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.cp_info-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.cp_info-header h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Small data message for sub-sections */
+.cp_no-data-message-small {
+  color: #6b7280;
+  font-size: 13px;
+  font-style: italic;
+  padding: 10px;
+  background: #f9fafb;
+  border-radius: 6px;
+  border: 1px dashed #d1d5db;
+  text-align: center;
+}
+
+/* Overall no data message for the whole component */
+.cp_no-data-message {
+  color: #6b7280;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px dashed #d1d5db;
+  margin-top: 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cp_certifications-container {
+    padding: 16px;
+  }
+
+  .cp_section-header h3 {
+    font-size: 16px;
+  }
+
+  .cp_subsection-title {
+    font-size: 14px;
+  }
+
+  .cp_additional-info-item {
+    font-size: 13px;
+  }
+
+  .cp_certification-item {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+/* Remove any layout specific styles like .cp_right-sidebar, .cp_candidate-profile-layout */
+/* These belong in CandidateSingle3.css or a global layout file */
